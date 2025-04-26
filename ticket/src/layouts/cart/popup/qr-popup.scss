@@ -1,0 +1,59 @@
+@import "@rstyles/responsive";
+@import "@tstyles/popup-btn";
+
+.qr-popup__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+
+    font-family: MontserratRegular, serif;
+
+    @include respond-to(large) {
+        width: 28rem;
+
+        padding: 2rem;
+    }
+}
+
+.qr-popup__wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.qr-popup__wrapper div span {
+    font-size: 1rem;
+}
+
+.qr-image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-image__container img {
+    width: 100%;
+
+    @include respond-to(large) {
+        width: 80%;
+    }
+}
+
+.qr-popup__wrapper div p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.qr-popup__wrapper div button {
+    @include popupButton;
+
+    & {
+        padding: 0.7rem 2rem;
+        margin: 1rem auto 0 auto;
+    }
+
+    @include respond-to(large) {
+        margin-top: 1.5rem;
+    }
+}

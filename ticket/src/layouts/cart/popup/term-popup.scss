@@ -1,0 +1,62 @@
+@import "@rstyles/responsive";
+
+.term-popup__wrapper {
+    width: 80%;
+    height: 75%;
+
+    @include respond-to(large) {
+        width: 60%;
+    }
+}
+.term-popup__title {
+    font-family: MonumentHeavy, serif;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.term-popup__content {
+    font-family: MontserratRegular, serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+h5 {
+    margin-bottom: 0;
+
+    font-family: MontserratRegular, serif;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0.8rem;
+}
+
+.term-popup__content div:nth-child(3) {
+    ul {
+        counter-reset: section;
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+
+            p {
+                display: inline;
+            }
+
+            &:before {
+                counter-increment: section;
+                content: "3." counter(section) ". ";
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+a {
+    color: #04bfff;
+}

@@ -1,0 +1,25 @@
+@mixin ticket-btn {
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+
+    font-family: MonumentBold, serif;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #04bfff;
+    text-decoration: none;
+
+    background-color: white;
+    box-shadow: 5px 6px #2c5ea2;
+    border-radius: 0.5rem;
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+        background-color: #e7e9eb;
+        box-shadow: 3px 4px #4c4d60;
+        transform: translateY(4px);
+        transform: translateX(1px);
+    }
+}

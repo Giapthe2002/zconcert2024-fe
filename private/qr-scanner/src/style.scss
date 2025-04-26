@@ -1,0 +1,17 @@
+@import "@rstyles/responsive";
+
+.video__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100svw;
+}
+
+.video__scanner {
+    border: 1px solid black;
+    width: 90%;
+
+    @include respond-to(xlarge) {
+        width: 50%;
+    }
+}

@@ -1,0 +1,35 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+@import "./background";
+
+@import "@rstyles/font";
+// Inter
+@include use-font(InterMedium);
+@include use-font(InterBold);
+// Monument
+@include use-font(MonumentMedium);
+@include use-font(MonumentSemiBold);
+@include use-font(MonumentBold);
+@include use-font(MonumentHeavy);
+// Montserrat
+@include use-font(MontserratRegular);
+@include use-font(MontserratBold);
+
+* {
+    touch-action: manipulation;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    @media only screen and (min-width: 768px) {
+        position: absolute;
+    }
+}

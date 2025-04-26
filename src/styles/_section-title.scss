@@ -1,0 +1,20 @@
+@import "@rstyles/responsive";
+
+@mixin section-title {
+    margin-bottom: 0;
+
+    font-family: MonumentSemiBold, serif;
+    font-size: 1.4rem;
+    color: white;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond-to(medium) {
+        font-size: 1.6rem;
+    }
+
+    @include respond-to(large) {
+        font-size: 2rem;
+    }
+}

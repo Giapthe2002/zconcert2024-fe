@@ -1,0 +1,5 @@
+@mixin grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}

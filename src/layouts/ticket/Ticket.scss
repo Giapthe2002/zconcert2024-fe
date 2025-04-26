@@ -1,0 +1,167 @@
+@import "@rstyles/responsive";
+@import "@rstyles/section-title";
+@import "@rstyles/benefit-btn";
+
+#ticket {
+    width: 95%;
+    margin: 0 auto;
+
+    @include respond-to(large) {
+        width: 90%;
+        padding-top: 20px;
+    }
+}
+
+.ticket__title {
+    @include section-title;
+}
+
+// Table
+.content__table {
+    width: 100%;
+    margin: 3rem auto 0 auto;
+    
+
+    color: white;
+    font-family: InterBold, serif;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
+
+    @include respond-to(small) {
+        width: 70%;
+        table-layout: fixed;
+    }
+
+    @include respond-to(medium) {
+        width: 80%;
+
+        font-size: 1rem;
+    }
+
+    @include respond-to(large) {
+        width: 60%;
+    }
+
+    tr {
+        .table__header div {
+            width: 50%;
+            padding: 0.2rem 0;
+            margin: 0 auto;
+
+            font-family: MonumentHeavy, serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            background-color: #35b7ff;
+            border: 1px solid white;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+
+            @include respond-to(medium) {
+
+                font-size: 1rem;
+            }
+
+            @include respond-to(large) {
+                width: 65%;
+
+                font-size: 1.2rem;
+            }
+
+            @include respond-to(xlarge) {
+                width: 55%;
+            }
+        }
+
+        th,
+        td {
+            padding: 0.4rem 0;
+        }
+
+        td span:nth-child(1) {
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+
+        td:nth-child(1) {
+            font-size: 0.9rem;
+            text-align: left;
+            text-transform: uppercase;
+
+            @include respond-to(medium) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// Button benefit
+.benefit-btn {
+    @include benefit-btn;
+}
+
+.table__benefit-cell {
+    display: none;
+
+    @include respond-to(medium) {
+        display: table-cell;
+
+        .table__benefit {
+            width: 50%;
+        }
+    }
+}
+
+.content__benefit {
+    width: 60%;
+    margin: 3rem auto 0 auto;
+    padding: 0;
+    float: none;
+
+    font-family: MonumentSemiBold, serif;
+    font-size: 0.8rem;
+    text-align: center;
+
+    border-radius: 1rem;
+
+    @include respond-to(small) {
+        width: 40%;
+    }
+    @include respond-to(medium) {
+        display: none;
+    }
+}
+
+.content__btn {
+    display: block;
+    padding: 1rem 1.2rem;
+    margin: 2rem auto 0 auto;
+
+    font-family: MonumentBold, serif;
+    font-size: 0.9rem;
+}
+
+.content__map img {
+    width: 95%;
+    display: block;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem;
+
+    background-color: white;
+    border-radius: 1rem;
+
+    @include respond-to(small) {
+        width: 60%;
+        padding: 2rem;
+    }
+
+    @include respond-to(medium) {
+        width: 50%;
+        padding: 2.5rem;
+    }
+
+    @include respond-to(small) {
+        width: 40%;
+        padding: 3rem;
+    }
+}

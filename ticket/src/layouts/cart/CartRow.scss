@@ -1,0 +1,146 @@
+@import "@rstyles/responsive";
+
+.row__container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid white;
+
+    @include respond-to(large) {
+        padding: 0.8rem 0;
+    }
+}
+
+.row__ticket {
+    color: white;
+    font-family: InterBold, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.name__container > span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+    @include respond-to(medium) {
+        font-size: 0.8rem;
+    }
+
+    @include respond-to(large) {
+        font-size: 1rem;
+    }
+
+    @include respond-to(xlarge) {
+        font-size: 1.25rem;
+    }
+}
+
+.ticket__name {
+    &--sold-out {
+        text-decoration-line: line-through;
+    }
+}
+
+.sold-out-tag {
+    color: red;
+    font-weight: bold;
+
+    @include respond-to(small) {
+        display: block;
+    }
+
+    @include respond-to(medium) {
+        display: inline;
+    }
+}
+
+.ticket__type {
+    font-style: italic;
+    padding-left: 0.8rem;
+
+    @include respond-to(xlarge) {
+        font-size: 1rem;
+    }
+}
+
+.quantity-btn {
+    border: 1px solid #ddd;
+    margin: 0;
+    width: 40px;
+    height: 100%;
+    line-height: 30px;
+    padding: 0;
+    background: #eee;
+    outline: none;
+    cursor: pointer;
+
+    touch-action: manipulation;
+
+    &:hover {
+        background: rgb(230, 230, 230);
+    }
+
+    &:active {
+        background: rgb(210, 210, 210);
+    }
+
+    &--decrease {
+        margin-right: -4px;
+        border-radius: 8px 0 0 8px;
+        color: #04bfff;
+
+        font-family: InterBold, serif;
+        font-size: 1rem;
+    }
+
+    &--increase {
+        margin-left: -4px;
+        border-radius: 0 8px 8px 0;
+        color: #04bfff;
+
+        font-family: InterBold, serif;
+        font-size: 1rem;
+    }
+}
+
+.quantity-field {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    color: #04bfff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: white;
+    font-family: InterBold, serif;
+    user-select: none;
+
+    &::selection {
+        background: none;
+    }
+}
+
+.quantity-btn--sold-out, .quantity-field__sold-out {
+    opacity: 0.6;
+    cursor: not-allowed;
+    color: #afafaf;
+    background: #eeeeee;
+    
+}
+
+.quantity-btn--sold-out {
+    &:active {
+        background: #eeeeee;
+    }
+
+    &:hover {
+        background: #eeeeee;
+    }
+}

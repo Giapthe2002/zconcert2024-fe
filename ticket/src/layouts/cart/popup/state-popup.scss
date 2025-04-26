@@ -1,0 +1,22 @@
+@import "@rstyles/responsive";
+
+.state-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat-bold, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+
+    i {
+        display: block;
+        font-size: 6rem;
+        margin-top: 1rem;
+    }
+
+    @include respond-to(xlarge) {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}

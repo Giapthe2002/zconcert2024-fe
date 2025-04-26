@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "skipLibCheck": true,
+        "typeRoots": ["./node_modules/@types", "./src/types"],
+
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+
+        "paths": {
+            /* Root */
+            "@rsrc/*": ["./src/*"],
+            "@rtypes/*": ["./src/types/*"],
+            "@rlibs/*": ["./src/libs/*"],
+            "@rstyles/*": ["./src/styles/*"],
+            "@rdata/*": ["./src/data/*"],
+
+            /* Ticket */
+            "@tsrc/*": ["./ticket/src/*"],
+            "@tdata/*": ["./ticket/src/data/*"],
+            "@tenums/*": ["./ticket/src/enums/*"],
+            "@tstyles/*": ["./ticket/src/styles/*"],
+            "@ttypes/*": ["./ticket/src/types/*"],
+            "@tutils/*": ["./ticket/src/utils/*"]
+        }
+    },
+    "include": [
+        "src",
+        "ticket/src",
+        "private/zconcert-admin/src",
+        "private/qr-scanner/src"
+    ]
+}

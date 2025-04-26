@@ -1,0 +1,59 @@
+@mixin use-font($font) {
+    @if $font == InterMedium {
+        @font-face {
+            font-family: InterMedium;
+            src: url("/fonts/Inter/InterMedium.woff2") format("woff2");
+        }
+    } @else if $font == InterBold {
+        @font-face {
+            font-family: InterBold;
+            src: url("/fonts/Inter/InterBold.woff2") format("woff2");
+        }
+    } @else if $font == InterExtraBold {
+        @font-face {
+            font-family: InterExtraBold;
+            src: url("/fonts/Inter/InterExtraBold.woff2") format("woff2");
+        }
+    } @else if $font == MonumentMedium {
+        @font-face {
+            font-family: MonumentMedium;
+            src: url("/fonts/Monument/MonumentMedium.woff2") format("woff2");
+        }
+    } @else if $font == MonumentBold {
+        @font-face {
+            font-family: MonumentBold;
+            src: url("/fonts/Monument/MonumentBold.woff2") format("woff2");
+        }
+    } @else if $font == MonumentSemiBold {
+        @font-face {
+            font-family: MonumentSemiBold;
+            src: url("/fonts/Monument/MonumentSemiBold.woff2") format("woff2");
+        }
+    } @else if $font == MonumentHeavy {
+        @font-face {
+            font-family: MonumentHeavy;
+            src: url("/fonts/Monument/MonumentHeavy.woff2") format("woff2");
+        }
+    } @else if $font == MonumentBlack {
+        @font-face {
+            font-family: MonumentBlack;
+            src: url("/fonts/Monument/MonumentBlack.woff2") format("woff2");
+        }
+    } @else if $font == MontserratRegular {
+        @font-face {
+            font-family: MontserratRegular;
+            src: url("/fonts/Montserrat/MontserratRegular.woff2")
+                format("woff2");
+        }
+    } @else if $font == MontserratLight {
+        @font-face {
+            font-family: MontserratLight;
+            src: url("/fonts/Montserrat/MontserratLight.woff2") format("woff2");
+        }
+    } @else if $font == MontserratBold {
+        @font-face {
+            font-family: MontserratBold;
+            src: url("/fonts/Montserrat/MontserratBold.woff2") format("woff2");
+        }
+    }
+}

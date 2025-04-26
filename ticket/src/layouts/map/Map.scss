@@ -1,0 +1,57 @@
+@import "@rstyles/responsive";
+
+#map {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    touch-action: manipulation;
+
+    @media only screen and (orientation: portrait) {
+        height: 50wvh;
+        width: 67wvh;
+    }
+
+    @media screen and (orientation: landscape) {
+        width: 60%;
+        height: 100%;
+    }
+
+    @include respond-to(large) {
+        width: 50%;
+    }
+
+    @include respond-to(xlarge) {
+        width: 66.7%;
+    }
+}
+
+area {
+    cursor: pointer;
+}
+
+.map__container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 80%;
+    }
+
+    @include respond-to(large) {
+        img {
+            width: 90%;
+        }
+    }
+
+    @include respond-to(xlarge) {
+        width: 100%;
+
+        img {
+            width: 60%;
+        }
+    }
+}

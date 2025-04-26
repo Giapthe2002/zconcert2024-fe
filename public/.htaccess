@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^email-asset/mail-image\.jpg$ /images/email/zconcert2024-banner.jpg [R=301,L]
+RewriteRule ^email-asset/z24\.jpg$ /images/email/zconcert2024-logo.jpg [R=301,L]

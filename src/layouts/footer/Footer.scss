@@ -1,0 +1,102 @@
+@import "@rstyles/responsive";
+@import "@rstyles/grid";
+
+#footer {
+    background: white;
+}
+
+.footer__container {
+    @include grid;
+    grid-template-columns: auto;
+    gap: 0;
+    width: 95%;
+    margin: 4rem auto 0 auto;
+    padding: 4rem 0 1rem 0;
+
+    font-family: MonumentMedium, serif;
+    font-size: 0.8rem;
+    color: #04bfff;
+    text-align: justify;
+    line-height: 1.6;
+
+    @include respond-to(medium) {
+        grid-template-columns: auto auto;
+        column-gap: 3rem;
+
+        font-size: 0.7rem;
+    }
+
+    @include respond-to(large) {
+        width: 90%;
+    }
+
+    @include respond-to(xlarge) {
+        grid-template-columns: repeat(3, 30%);
+        gap: 5%;
+    }
+}
+
+.part__title {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include respond-to(medium) {
+        font-size: 1rem;
+    }
+
+    @include respond-to(xlarge) {
+        margin-bottom: 2rem;
+
+        font-size: 1.2rem;
+    }
+}
+
+.part__item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    margin-bottom: 1rem;
+}
+
+.item__icon i {
+    padding: 0.3rem;
+
+    color: white;
+    background: #04bfff;
+    border-radius: 0.5rem;
+    border: #04bfff 1px solid;
+}
+
+.item__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item__text span {
+    display: block;
+}
+
+.item__text span a,
+.item__text a {
+    font-family: MonumentMedium, serif;
+    font-size: 0.8rem;
+    color: #04bfff;
+    text-decoration: none;
+
+    @include respond-to(medium) {
+        font-size: 0.7rem;
+    }
+
+    &:hover {
+        color: #05aae2;
+    }
+
+    &:active {
+        color: #0886b1;
+    }
+}

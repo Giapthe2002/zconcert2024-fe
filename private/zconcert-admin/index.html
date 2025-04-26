@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Title icon -->
+    <link rel="icon" type="image/x-icon" href="/zconcert.ico" />
+    <title>Z Concert Admin</title>
+
+    <!-- Website link thumbnail -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Z Concert 2024" />
+    <meta
+      property="og:description"
+      content="DỰ ÁN THANH NIÊN VÌ CỘNG ĐỒNG TỈNH THANH HÓA"
+    />
+    <meta
+      property="og:image"
+      content="https://zconcert.vn/images/story/zconcert2024.jpg"
+    />
+
+    <!-- Meta tag -->
+    <meta name="author" content="Ceras" />
+    <meta name="copyright" content="Ceras" />
+    <meta name="email" content="zconcertproject2024@gmail.com" />
+    <meta name="Charset" content="UTF-8" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Robots" content="noindex" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2 class="page__title">Trang quản lý</h2>
+    <div class="page__container">
+      <div class="page__left">
+        <div class="page__search">
+          <div>
+            <label for="search__input-area">UUID:</label>
+            <textarea
+              class="search__input-area"
+              name="search__input-area"
+            ></textarea>
+            <button class="search__button">Tìm kiếm</button>
+          </div>
+          <span id="js-searchLog"></span>
+        </div>
+
+        <div class="page__infomation">
+          <h2 class="information__title">Thông tin khách hàng</h2>
+          <div class="information__details">
+            <div class="info-item">
+              <h3>UUID</h3>
+              <span></span>
+            </div>
+            <div class="info-item">
+              <h3>Họ và tên</h3>
+              <span></span>
+            </div>
+            <div class="info-item">
+              <h3>Email</h3>
+              <span></span>
+            </div>
+            <div class="info-item">
+              <h3>Thông tin vé</h3>
+              <span></span>
+            </div>
+            <div class="info-item">
+              <h3>Tổng tiền</h3>
+              <span></span>
+            </div>
+            <div class="info-item">
+              <h3>Trạng thái thanh toán</h3>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__right">
+        <div class="page__wavy">
+          <h2>Wavy</h2>
+          <button id="js-wavyTicketBtn" disabled>Gửi vé</button>
+          <div id="js-wavyTicketLog"></div>
+        </div>
+        <div class="page__sandy">
+          <h2>Sandy</h2>
+          <button id="js-sandyNotiBtn" disabled>Thông báo</button>
+          <div id="js-sandyNotiLog"></div>
+        </div>
+        <div class="page__sandy-select">
+          <h2>Chọn ghế (vé Sandy)</h2>
+          <div class="select__container">
+            <div class="select-item">
+              <h4>Sandy A <span id="js-sandyATicket"></span></h4>
+              <input type="text" id="js-sandyAInput" disabled />
+              <span id="js-sandyAInputLog"></span>
+            </div>
+            <div class="select-item">
+              <h4>Sandy B <span id="js-sandyBTicket"></span></h4>
+              <input type="text" id="js-sandyBInput" disabled />
+              <span id="js-sandyBInputLog"></span>
+            </div>
+            <div class="select-item">
+              <h4>Sandy C <span id="js-sandyCTicket"></span></h4>
+              <input type="text" id="js-sandyCInput" disabled />
+              <span id="js-sandyCInputLog"></span>
+            </div>
+            <div class="select-item">
+              <h4>Sandy D <span id="js-sandyDTicket"></span></h4>
+              <input type="text" id="js-sandyDInput" disabled />
+              <span id="js-sandyDInputLog"></span>
+            </div>
+          </div>
+          <button id="js-sandyTicketBtn" disabled>Xác nhận</button>
+          <div id="js-sandyTicketLog"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

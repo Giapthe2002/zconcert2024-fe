@@ -1,0 +1,23 @@
+@mixin popupButton {
+    width: max-content;
+    padding: 0.6rem 3rem;
+    margin: 0 auto;
+
+    font-family: MontserratBold, serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    background: #04bfff;
+
+    &:hover {
+        background: #05b7f2;
+        color: rgb(246, 246, 246);
+    }
+
+    &:active {
+        background: #03aae2;
+        transform: translateY(1px);
+    }
+}

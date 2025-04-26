@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Title icon -->
+    <link rel="icon" type="image/x-icon" href="/zconcert.ico" />
+    <title>Z Concert QR Scanner</title>
+
+    <!-- Website link thumbnail -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Z Concert 2024" />
+    <meta
+      property="og:description"
+      content="DỰ ÁN THANH NIÊN VÌ CỘNG ĐỒNG TỈNH THANH HÓA"
+    />
+    <meta
+      property="og:image"
+      content="https://zconcert.vn/images/story/zconcert2024.jpg"
+    />
+
+    <!-- Meta tag -->
+    <meta name="author" content="Ceras" />
+    <meta name="copyright" content="Ceras" />
+    <meta name="email" content="zconcertproject2024@gmail.com" />
+    <meta name="Charset" content="UTF-8" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Robots" content="noindex" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <span id="js-deviceHasCam"></span>
+
+    <div class="video__container" id="js-videoContainer">
+      <video class="video__scanner" id="js-videoScanner"></video>
+    </div>
+
+    <div id="js-scanLog"></div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

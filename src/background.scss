@@ -1,0 +1,18 @@
+$backgroundColor: linear-gradient(
+    90deg,
+    rgba(0, 93, 255, 1) 0%,
+    rgba(0, 177, 255, 1) 49.75%,
+    rgba(118, 201, 255, 1) 100%
+);
+
+body {
+    background-repeat: repeat;
+    background:
+        url("/images/background/background-dot.png") fixed 100%,
+        $backgroundColor fixed;
+
+    @media only screen and (min-width: 1024px) {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
